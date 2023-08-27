@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="A">
+        <div id="B">
+        <div id="C">click here</div>
+        </div>
+        </div>
+        <script>
+            document.querySelectorAll('div').forEach(element => {
+                 element.onclick = e => console.log(e.currentTarget.id)
+            }); 
+        </script>
+    <script src="./dist/index.js"></script>
+    
+</body>
+</html>
